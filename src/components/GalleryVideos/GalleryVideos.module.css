@@ -1,0 +1,26 @@
+.galleryContainer {
+    padding: 0 40px;
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 1024px) {
+    .galleryContainer {
+        margin-top: 106px;
+        padding: 0 2dvw;
+    }
+}
+
+@media (max-width: 430px) {
+    .galleryContainer {
+        margin-top: 42px;
+        padding: 0 18px;
+        /* max-width: 410px; */
+    }
+}

@@ -1,0 +1,67 @@
+/* .videoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    min-width: 280px;
+    max-width: 430px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    border-radius: 15px 15px 0 0;
+}
+ */
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    min-width: 280px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    border-radius: 15px 15px 0 0;
+    height: auto;
+}
+
+.imageCard {
+    width: 100%;
+    height: 100%;
+    border: 5px solid;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
+}
+
+.captionCard {
+    padding: 15px 0;
+    justify-content: space-around;
+    display: flex;
+    border: 5px solid;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    background-color: #03122F;
+}
+
+.buttonsCard {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: var(--fuente-roboto);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .videoContainer {
+        min-width: 100px;
+        max-width: 480px;
+        flex: 0 0 46dvw;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 430px) {
+    .videoContainer {
+        flex: 0 0 90dvw;
+    }
+}

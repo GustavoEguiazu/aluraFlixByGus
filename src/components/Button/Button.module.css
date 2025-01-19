@@ -1,0 +1,57 @@
+.button {
+    width: 100%;
+    max-width: 180px;
+    height: 54px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #F5F5F5;
+    font-family: var(--fuente-sans-pro);
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: inset 2px 2px 12px var(--primary-color);
+    background-color: #000000;
+
+}
+
+.button > img {
+    display: none;
+}
+
+@media (max-width: 430px) {
+    
+    .buttonIcon {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        border-radius: 50px;
+    }
+
+    .buttonIcon:hover {
+        background-color: #2271d175;
+    }
+
+    .buttonIcon > img {
+        display: flex;
+        width: 42px;
+        height: 42px;
+    }
+
+    .buttonAddPhone {
+        padding: 0;
+        border: none;
+    }
+
+    .buttonAddPhone:hover {
+        box-shadow: none;
+        background: transparent;
+    }
+}
